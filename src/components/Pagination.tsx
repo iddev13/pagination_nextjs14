@@ -54,6 +54,7 @@ const Pagination = (props: PaginationProps) => {
 						className={`
 							'relative inline-flex items-center border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-50'
 							${p === currentPage ? 'pointer-events-none bg-gray-100' : ''}
+							${i >= totalPages ? 'pointer-events-none bg-gray-100' : ''}
 							${i === 0 ? 'rounded-l-md' : ''}
 							${i === pages.length - 1 ? 'rounded-r-md' : ''}
 						`}
